@@ -1,0 +1,11 @@
+deploy:
+  steps:
+    - add-to-known_hosts:
+        hostname: $host
+    - add-ssh-key:
+        keyname: wercker
+    - script:
+        name: Push to dokku
+        code: |
+          git remote add deploy dokku@$host:$appname
+          git push deploy HEAD:master

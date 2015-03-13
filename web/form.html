@@ -1,0 +1,87 @@
+<html>
+<head>
+    <link href="//fonts.googleapis.com/css?family=Sintony:400,700" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        body, p, td, a {
+            font-family: 'Sintony', sans-serif;
+        }
+
+        .wrapper {
+            margin: 0 auto;
+            min-width: 800px;
+            max-width: 80%;
+            width: 80%;
+        }
+
+        .header {
+            height: 110px;
+        }
+
+        .header .logo {
+            float: left;
+            display: inline-block;
+            background: url('//www.kingsquare.nl/img/2009/logoKingsquare.png') no-repeat;
+            height: 110px;
+            width: 115px;
+        }
+
+        .service-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-field label {
+            vertical-align: top;
+            display: inline-block;
+            width: 20%;
+            min-width: 150px;
+            padding-top: 2px;
+        }
+
+        .form-field input, .form-field textarea {
+            display: inline-block;
+            width: 79%;
+            min-width: 300px;
+            border: 1px solid silver;
+            padding: 4px 4px 4px 5px;
+        }
+        .form-field input:focus, .form-field textarea:focus {
+            outline: 0 none;
+            border: 1px solid rgba(49, 143, 255, 0.8);
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(49, 143, 255, 0.6);
+        }
+        .form-field textarea {
+            height: 40%;
+        }
+        .form-field-buttons {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="wrapper">
+    <div class="header">
+        <div class="logo"></div>
+    </div>
+    <div class="service-title">A simple PHP-mt940 testing service</div>
+    <div class="content">
+        <form method="post" action="/">
+
+            <div class="form-field">
+                <label for="mt940">Mt940 text: </label>
+                <textarea name="mt940" id="mt940" placeholder="mt940..."></textarea>
+            </div>
+
+            <div class="form-field-buttons">
+                <input type="submit" value="parse"/>
+            </div>
+
+        </form>
+    </div>
+</div>
+</body>
+</html>
