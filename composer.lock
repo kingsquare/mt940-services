@@ -1,0 +1,64 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "4f892e96930c52a8ad9af346f2ec17be",
+    "packages": [
+        {
+            "name": "kingsquare/php-mt940",
+            "version": "0.9.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fruitl00p/php-mt940.git",
+                "reference": "365480a3d3901bb6b52ffd3d37aae2fe51342f2f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fruitl00p/php-mt940/zipball/365480a3d3901bb6b52ffd3d37aae2fe51342f2f",
+                "reference": "365480a3d3901bb6b52ffd3d37aae2fe51342f2f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Kingsquare\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Robin Speekenbrink",
+                    "email": "robin@kingsquare.nl"
+                }
+            ],
+            "description": "Simple MT940 parser in PHP",
+            "homepage": "https://github.com/fruitl00p/php-mt940",
+            "keywords": [
+                "mt940",
+                "parsing"
+            ],
+            "time": "2015-03-06 12:11:21"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.4"
+    },
+    "platform-dev": []
+}
