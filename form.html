@@ -1,6 +1,9 @@
 <html>
+
 <head>
-    <link href="//fonts.googleapis.com/css?family=Sintony:400,700" rel="stylesheet" type="text/css">
+
+    <link href='//fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
+
     <style type="text/css">
         body, p, td, a {
             font-family: 'Sintony', sans-serif;
@@ -25,11 +28,46 @@
             width: 115px;
         }
 
+        .header .title {
+            display: inline-block;
+            font-size: 1.4em;
+            font-weight: bold;
+            height: 110px;
+        }
+
         .service-title {
             font-size: 1.4em;
             font-weight: bold;
             margin-top: 20px;
             margin-bottom: 20px;
+        }
+
+        .service-description {
+            padding: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border: 1px solid gray;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            background-color: #fffbc3;
+
+        }
+        .service-parameter {
+
+        }
+
+        form {
+        }
+
+        .form-block {
+            border: 1px solid gray;
+            padding: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .form-field {
         }
 
         .form-field label {
@@ -45,11 +83,13 @@
             width: 79%;
             min-width: 300px;
             border: 1px solid silver;
-            padding: 4px 4px 4px 5px;
+            padding: 4px;
+            padding-left: 5px;
         }
         .form-field input:focus, .form-field textarea:focus {
+            border: 1px solid #318fff;
             outline: 0 none;
-            border: 1px solid rgba(49, 143, 255, 0.8);
+            border-color: rgba(49, 143, 255, 0.8);
             box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(49, 143, 255, 0.6);
         }
         .form-field textarea {
@@ -58,6 +98,10 @@
         .form-field-buttons {
             text-align: right;
         }
+        .api_documentation_option .option {
+            font-weight: bold;
+        }
+
     </style>
 </head>
 
@@ -67,13 +111,17 @@
     <div class="header">
         <div class="logo"></div>
     </div>
-    <div class="service-title">A simple PHP-mt940 testing service <a href="//github.com/kingsquare/mt940-services">Source for _this_ service</a></div>
+    <div class="service-title">Service: MT940 parsing</div>
+    <div class="service-description">
+        <p>A simple PHP-mt940 testing service <a href="//github.com/kingsquare/mt940-services">Source for this service</a></p>
+    </div>
     <div class="content">
         <form method="post" action="/">
-
-            <div class="form-field">
-                <label for="mt940">Mt940 text: </label>
-                <textarea name="mt940" id="mt940" placeholder="mt940..."></textarea>
+            <div class="form-block">
+                <div class="form-field">
+                    <label for="mt940">Mt940 text: </label>
+                    <textarea name="mt940" id="mt940" placeholder="mt940..."></textarea>
+                </div>
             </div>
 
             <div class="form-field-buttons">
@@ -83,5 +131,7 @@
         </form>
     </div>
 </div>
+
 </body>
+
 </html>
