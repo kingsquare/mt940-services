@@ -21,3 +21,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['mt940'])) {
     die(json_encode($parsedStatements, JSON_PRETTY_PRINT));
 }
 readfile(__DIR__.'/form.html');
+$deployedRevision = getenv('GIT_REV');
+if ($deployedRevision !== false) {
+    echo '<div class="wrapper release">git v'.$deployedRevision.'</div>';
+}
+echo '</body></html>';
