@@ -10,6 +10,6 @@
   ],
   "require": {
 	"php": ">=5.4",
-    "kingsquare/php-mt940": "~1"
+    "kingsquare/php-mt940": "1.*"
   }
 }
