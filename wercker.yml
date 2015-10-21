@@ -1,7 +1,7 @@
-box: wercker/php
+box: gekkie/wercker-docker-php:7
 build:
   steps:
-    - leipert/composer-install@0.0.1
+    - leipert/composer-install
 deploy:
   steps:
     - add-to-known_hosts:
